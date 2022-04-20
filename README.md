@@ -8,9 +8,12 @@
 
 ### About
 ```bash
->**The Iris Dataset** contains following features:
-1. length and width of sepals and  petals of 50 samples of three species of Iris:
->>> Iris setosa Iris virginica and Iris versicolor
+The Iris Dataset contains following features: length and width of sepals and  petals of 50 samples of three species of Iris:
+```
+ 1. Iris setosa 
+ 2. Iris virginica
+ 3. Iris versicolor
+ ```
 These measures were used to create a linear discriminant model to classify the species.
 The dataset is often used in data mining, classification and clustering examples and to test algorithms.
 ```
