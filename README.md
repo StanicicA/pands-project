@@ -8,7 +8,9 @@
 
 ### About
 ```bash
-The Iris Dataset contains following features: length and width of sepals and  petals of 50 samples of three species of Iris:
+The Iris Dataset contains features like 
+length and width of sepals and petals of 50 samples 
+of three species of Iris:
 ```
  1. Iris setosa 
  2. Iris virginica
