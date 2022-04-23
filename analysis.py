@@ -19,7 +19,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 #Load Dataset into pandas dataframe
-iris = pd.read_csv('iriscsv.csv')
+iris = pd.read_csv('iris.csv')
 
 #filename = 'irisdata.csv'
 #infile = open (filename, 'r') 
