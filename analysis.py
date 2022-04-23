@@ -18,11 +18,15 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-#Load Dataset
-iris = pd.read_csv('irisdata.csv')
-filename = 'irisdata.csv'
-infile = open (filename, 'r') 
-#data = infile.read ()
+#Load Dataset into pandas dataframe
+iris = pd.read_csv('iriscsv.csv')
 
-print (filename)
-infile.close ()
+#filename = 'irisdata.csv'
+#infile = open (filename, 'r') 
+#data = infile.read ()
+#print (filename)
+#infile.close ()
+
+#prints out data points and features
+iris.head ()
+print (iris)
