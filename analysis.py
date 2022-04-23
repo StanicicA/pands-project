@@ -14,12 +14,12 @@
     #f = open ('irisdata.text')
     #f.close ()
     #print (filename)
-#import numpy as np
-#import pandas as pd
-#import matplotlib.pyplot as plt
-#import seaborn as sns
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 #Load Dataset
-#iris = pd.read_csv('irisdata.csv')
+iris = pd.read_csv('irisdata.csv')
 filename = 'irisdata.csv'
 infile = open (filename, 'r') 
 #data = infile.read ()
