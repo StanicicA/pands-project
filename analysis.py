@@ -1,6 +1,5 @@
 #Analysing Iris Data Set
-#Write a program that:
-
+#A program that:
 #1.Outputs a summary of each variable to a single text file,
 #2. Saves a histogram of each variable to png files, and
 #3. Outputs a scatter plot of each pair of variables.
@@ -8,25 +7,27 @@
 
 #Author: Andrea Stanicic
 
-#filename = 'irisdata.text'
-#with open (filename, 'r') as f:
-    #read_data = f.read ()
-    #f = open ('irisdata.text')
-    #f.close ()
-    #print (filename)
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+
 #Load Dataset into pandas dataframe
-iris = pd.read_csv('iris.csv')
+data = pd.read_csv('iris.csv')
 
-#filename = 'irisdata.csv'
-#infile = open (filename, 'r') 
-#data = infile.read ()
-#print (filename)
-#infile.close ()
+#to get basic statistics about the data
+basicstat = (data.describe())
 
-#prints out data points and features
-iris.head ()
-print (iris)
+#to get basic info on the data
+info = data.info ()
+
+#to see number of samples for each species
+
+samples = data ['species'].value_counts()
+
+# to display histogram 
+
+data['sepallength'].hist()
+
+
+
