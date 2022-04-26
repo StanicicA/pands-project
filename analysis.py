@@ -22,6 +22,7 @@ print (basicstat)
 #to get basic info on the data
 info = data.info ()
 print (info)
+
 #to see number of samples for each species
 samples = data ['species'].value_counts()
 print (samples)
@@ -42,4 +43,41 @@ sns.FacetGrid(data,hue="species").map(plt.scatter,"petallength","petalwidth").ad
 sns.FacetGrid(data,hue="species").map(plt.scatter,"sepallength","petalwidth").add_legend
 sns.FacetGrid(data,hue="species").map(plt.scatter,"petallength","sepalwidth").add_legend
 plt.show ()
+
+#to show histogram for sepal lenght
+plt.figure(figsize = (10, 7))
+x = data["sepallength"]
+plt.hist(x, bins = 20, color = "blue")
+plt.title("sepal length in cm")
+plt.xlabel("sepal length in cm")
+plt.ylabel("Count")
+plt.savefig("sepallenght.png")
+
+#to show histogram for sepal width
+plt.figure(figsize = (10, 7))
+x = data.sepalwidth
+plt.hist(x, bins = 20, color = "pink")
+plt.title("sepal width in cm")
+plt.xlabel("sepal width in cm")
+plt.ylabel("Count") 
+plt.savefig("sepalwidth.png")
+
+#to show histogram for petallength
+plt.figure(figsize = (10, 7))
+x = data.petallength
+plt.hist(x, bins = 20, color = "red")
+plt.title("Petal length in cm")
+plt.xlabel("petal length in cm")
+plt.ylabel("Count")
+plt.savefig("petallength.png")
+
+#to show histogram for petalwidth
+
+plt.figure(figsize = (10, 7))
+x = data.petalwidth 
+plt.hist(x, bins = 20, color = "purple")
+plt.title("Petal Width in cm")
+plt.xlabel("Petal_Width in cm")
+plt.ylabel("Count") 
+plt.savefig("petalwidth.png")
 
