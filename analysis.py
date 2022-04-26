@@ -1,5 +1,5 @@
 #Analysing Iris Data Set
-#A program that:
+#Writing a program that:
 #1.Outputs a summary of each variable to a single text file,
 #2. Saves a histogram of each variable to png files, and
 #3. Outputs a scatter plot of each pair of variables.
@@ -29,15 +29,17 @@ print (samples)
 #visualisation/showing the graph using the function plot
 data.plot()
 
-
 # to display the plot based on x and y 
 data.plot(kind = "scatter",x="sepallength",y="sepalwidth",color = "green")
  
 #to show the difference between the scatter based on species using seaborn function
-sns.FacetGrid(data,hue="species",size=5).map(plt.scatter,"sepallength","sepalwidth").add_legend()
+sns.FacetGrid(data,hue="species").map(plt.scatter,"sepallength","sepalwidth").add_legend()
 
 #if petal lenght/width is taken into account we can easly distinguish the difference in between versicolor and virginica from setosa
-sns.FacetGrid(data,hue="species",size=5).map(plt.scatter,"petallength","petalwidth").add_legend
+sns.FacetGrid(data,hue="species").map(plt.scatter,"petallength","petalwidth").add_legend
 
+#if we try do compare other two variables:
+sns.FacetGrid(data,hue="species").map(plt.scatter,"sepallength","petalwidth").add_legend
+sns.FacetGrid(data,hue="species").map(plt.scatter,"petallength","sepalwidth").add_legend
 plt.show ()
 
