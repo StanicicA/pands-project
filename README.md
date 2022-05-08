@@ -1,4 +1,4 @@
-# pands-project
+# Iris Data Set
  ```bash
  Author: Andrea Stanicic
  ```
