@@ -9,9 +9,7 @@
 
 ## The Irish Data Set
 ```bash
-The Iris Dataset contains features like 
-length and width of sepals and petals of 50 samples 
-of three species of Iris:
+The Iris Dataset contains features like length and width of sepals and petals of 50 samples of three species of Iris:
 ```
  1. **Iris setosa**
  2. **Iris virginica**
@@ -27,9 +25,9 @@ Exploratory Data Analysis (EDA) is a technique to analyze data using some visual
 
 ## Correlations between Variables:
 
-Correlations between Variables was achived classifying the data in species and characteristic
-Output means of each characteristic for each species and Overall summary of entire iris data such as: count, mean sd, min, %, max
-Output: Histograms and graphs included
++ Classifying the data in species and characteristic
++ Output means of each characteristic for each species and Overall summary of entire iris data such as: count, mean sd, min, %, max
++ Histograms and graphs included
 
 Iris data set can be found on the following [link](https://archive.ics.uci.edu/ml/machine-learning-databases/iris/).
 
